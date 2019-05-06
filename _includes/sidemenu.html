@@ -1,0 +1,25 @@
+<nav class="side-menu m-left-side m-show-submenu">
+    <ul>
+        <li ><a href="/">Trang chủ</a>
+        {% for i in site.data.navigation %}
+
+
+        {% for j in i.sub %}
+        {% if page.url == j.link %}
+        {% assign class = "m-active" %}
+        {% endif %}
+        {% endfor %}
+
+
+        <li class = "{{class}}"><a href="{{i.link}}">{{i.name}}</a>
+            {% assign class = "" %}
+            <ul>
+                {% for j in i.sub %}
+                <li class = "{% if page.url == j.link %} m-active {%endif%}"><a href="{{j.link}}">{{j.name}}</a></li>
+                {% endfor %}
+            </ul>   
+        </li>
+
+        {% endfor %}
+    </ul>
+</nav>

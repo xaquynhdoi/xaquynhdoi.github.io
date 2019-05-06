@@ -1,0 +1,67 @@
+---
+title: Tài liệu
+headertitle: Tài liệu được phát hành bởi xã Quỳnh Đôi
+layout: home
+---
+
+								<!-- DOCUMENT LIST PAGE : begin -->
+								<div class="document-page document-list-page">
+                                        <div class="c-content-box">
+                                            <ul class="document-list m-has-icons">
+                                                {% for i in site.data.documents %}
+                                         
+                                                {% case i.type %}
+                                                {% when "pdf" %}
+                                                {% assign class = "fa fa-file-pdf-o" %}
+                                                {% when "word" %}
+                                                {% assign class = "fa fa-file-word-o" %}
+                                                {% when "excel" %}
+                                                {% assign class = "fa fa-file-excel-o" %}
+                                                {% endcase %}
+
+
+
+
+
+
+    
+                                                <!-- DOCUMENT : begin -->
+                                                <li class="document">
+                                                    <div class="document-inner">
+    
+                                                        <!-- DOCUMENT TITLE : begin -->
+                                                        <h4 class="document-title m-has-icon">
+                                                            <span class="document-icon" title="{{i.type}}"><i class="{{class}}"></i></span>
+                                                            <a href="{{i.link}}" target="_blank">{{i.name}} </a>
+                                                            <span class="document-filesize">{{i.size}}</span>
+                                                        </h4>
+                                                        <!-- DOCUMENT TITLE : end -->
+    
+                                                        <!-- DOCUMENT INFO : begin -->
+                                                        <div class="document-info">
+                                                            <ul>
+                                                                <li class="document-date">Ngày đăng tải: <span>{{i.time}}</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- DOCUMENT INFO : end -->
+    
+                                                    </div>
+                                                </li>
+                                                <!-- DOCUMENT : end -->
+                                                {% endfor %}
+    
+    
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- DOCUMENT LIST PAGE : end -->
+    
+                                    <!-- PAGINATION : begin -->
+                                    <div class="c-pagination">
+                                        <ul>
+                                            <li class="m-active"><a href="post-list.html">1</a></li>
+                                            <li><a href="post-list.html">2</a></li>
+                                            <li><a href="post-list.html">3</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- PAGINATION : end -->

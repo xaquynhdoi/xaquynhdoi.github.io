@@ -1,0 +1,66 @@
+---
+title: Sự kiện
+headertitle: Sự kiện tại xã Quỳnh Đôi
+layout: home
+permalink: /sukien
+---
+
+{% for post in site.categories.event %}
+	<!-- EVENT LIST PAGE : begin -->
+    <div class="event-list-page event-page">
+
+        <!-- GROUP TITLE : begin -->
+        <h2 class="group-title">{{post.date | date: '%d/%m/%Y'}}</h2>
+        <!-- GROUP TITLE : end -->
+
+        <!-- EVENT : begin -->
+        <article class="event">
+            <div class="event-inner c-content-box m-no-padding">
+
+                <!-- EVENT IMAGE : begin -->
+                <div class="event-image">
+                    <a href="event-detail.html"><img src="{{post.img}}" alt=""></a>
+                </div>
+                <!-- EVENT IMAGE : end -->
+
+                <!-- EVENT CORE : begin -->
+                <div class="event-core">
+
+                    <!-- EVENT TITLE : begin -->
+                    <h2 class="event-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+                    <!-- EVENT TITLE : end -->
+
+                    <!-- EVENT INFO : begin -->
+                    <ul class="event-info">
+                        <li class="event-date">
+                            <i class="ico tp tp-calendar-full"></i>{{post.date | date: '%d/%m/%Y'}}
+                        </li>
+                        <li class="event-time">
+                            <i class="ico tp tp-clock2"></i>{{post.time}}
+                        </li>
+                        <li class="event-location">
+                            <i class="ico tp tp-map-marker"></i>{{post.location}}
+                        </li>
+                    </ul>
+                    <!-- EVENT INFO : end -->
+
+                </div>
+                <!-- EVENT CORE : end -->
+
+            </div>
+        </article>
+        <!-- EVENT : end -->
+
+
+    </div>
+    <!-- EVENT LIST PAGE : begin -->
+{% endfor %}
+    <!-- PAGINATION : begin -->
+    <div class="c-pagination">
+        <ul>
+            <li class="m-active"><a href="post-list.html">1</a></li>
+            <li><a href="post-list.html">2</a></li>
+            <li><a href="post-list.html">3</a></li>
+        </ul>
+    </div>
+    <!-- PAGINATION : end -->

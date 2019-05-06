@@ -1,0 +1,40 @@
+---
+title: Ảnh đẹp
+headertitle: Bộ sưu tập ảnh về xã Quỳnh Đôi
+layout: home
+permalink: /anh
+---
+					<!-- GALLERY LIST PAGE : begin -->
+                    <div class="gallery-list-page gallery-page">
+                            <div class="c-gallery">
+                                <!-- You can change the number of columns by changing "m-3-columns" class
+                                in the following element to m-2-columns | m-4-columns | m-5-columns : begin -->
+                                <ul class="gallery-images m-layout-masonry m-3-columns">
+
+                                    <!-- GALLERY IMAGE : begin -->
+                                    {% for i in site.data.gallery %}
+                                    <li class="gallery-image">
+                                        <div class="gallery-image-inner">
+                                            <a href="gallery-detail.html">
+                                                <img src="{{i.img}}" alt="">
+                                            </a>
+                                            <h2 class="gallery-title"><a href="gallery-detail.html">{{i.name}}</a></h2>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                    
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- GALLERY LIST PAGE : begin -->
+
+                        <!-- PAGINATION : begin -->
+                        <div class="c-pagination">
+                            <ul>
+                                <li class="m-active"><a href="post-list.html">1</a></li>
+                                <li><a href="post-list.html">2</a></li>
+                                <li><a href="post-list.html">3</a></li>
+                            </ul>
+                        </div>
+                        <!-- PAGINATION : end -->
