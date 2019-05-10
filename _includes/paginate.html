@@ -5,11 +5,11 @@
             {% assign var3 = site.data.canboxa.paginate | times: 1.0 %}
             {% assign var4 = var2 | divided_by: var3 | round %}
         
-            Hiển thị: 
+            Hiển thị
             {% if var1 > var2 %}
-            {{var2}}/{{var2}}
+            {{var2| minus: 6}} đến {{var2}} của {{var2}} mục
             {% else %}  
-            {{var1}}/{{var2}}
+            {{var1 | minus: 6}} đến {{var1}} của {{var2}} mục
             {% endif %}
 
             {% for i in (1..var4)%}

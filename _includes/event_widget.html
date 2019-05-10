@@ -4,54 +4,19 @@
                                     <h3 class="widget-title m-has-ico"><i class="widget-ico tp tp-calendar-full"></i>Sự kiện sắp tới</h3>
                                     <div class="widget-content">
                                         <ul class="event-list">
-
+                                            {% for post in site.categories.event %}
                                             <!-- EVENT : begin -->
                                             <li class="event m-has-date">
                                                 <div class="event-inner">
-                                                    <div class="event-date" title="June 3, 2016">
-                                                        <span class="event-month">Jun</span>
-                                                        <span class="event-day">3</span>
+                                                    <div class="event-date" title="{{post.date | date: "%d/%m/%Y"}}">
+                                                        <span class="event-month">Th {{post.date | date: "%-m"}}</span>
+                                                        <span class="event-day">{{post.date | date: "%-d"}}</span>
                                                     </div>
-                                                    <h4 class="event-title"><a href="event-detail.html">Movie Premiere: Reflex Revenge (Action Drama)</a></h4>
+                                                    <h4 class="event-title"><a href="{{post.url}}">{{post.title}}</a></h4>
                                                 </div>
                                             </li>
                                             <!-- EVENT : end -->
-
-                                            <!-- EVENT : begin -->
-                                            <li class="event m-has-date">
-                                                <div class="event-inner">
-                                                    <div class="event-date" title="June 24, 2016">
-                                                        <span class="event-month">Jun</span>
-                                                        <span class="event-day">24</span>
-                                                    </div>
-                                                    <h4 class="event-title"><a href="event-detail.html">Summer Rock Festival: Intrepid Pioneers, Filament Kingdom, Messenger Encounter &amp; More!</a></h4>
-                                                </div>
-                                            </li>
-                                            <!-- EVENT : end -->
-
-                                            <!-- EVENT : begin -->
-                                            <li class="event m-has-date">
-                                                <div class="event-inner">
-                                                    <div class="event-date" title="July 9, 2016">
-                                                        <span class="event-month">Jul</span>
-                                                        <span class="event-day">9</span>
-                                                    </div>
-                                                    <h4 class="event-title"><a href="event-detail.html">Theatre Premiere: Antigone with Maximiliano Simonas</a></h4>
-                                                </div>
-                                            </li>
-                                            <!-- EVENT : end -->
-
-                                            <!-- EVENT : begin -->
-                                            <li class="event m-has-date">
-                                                <div class="event-inner">
-                                                    <div class="event-date" title="July 15, 2016">
-                                                        <span class="event-month">Jul</span>
-                                                        <span class="event-day">15</span>
-                                                    </div>
-                                                    <h4 class="event-title"><a href="event-detail.html">Annual Spring Marathon: Around the TownPress</a></h4>
-                                                </div>
-                                            </li>
-                                            <!-- EVENT : end -->
+                                            {% endfor %}
 
                                         </ul>
                                         <p class="show-all-btn"><a href="/sukien">Xem tất cả sự kiện</a></p>
