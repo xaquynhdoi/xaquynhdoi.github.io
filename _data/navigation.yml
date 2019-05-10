@@ -1,0 +1,44 @@
+- name: Hệ thống chính trị
+  sub:
+    - name: Danh sách cán bộ xã
+      link: /canboxa-page1
+    - name: Đảng ủy
+      link: /danguy
+    - name: Hội đồng nhân dân
+      link: 
+    - name: Ủy ban nhân dân
+      link: 
+    - name: Các tổ chức chính trị xã hội
+      link: 
+- name: Cộng đồng
+  sub:
+    - name: Thông báo của xã
+      link: /thongbao
+    - name: Tin tức mới
+      link: /tintuc
+    - name: Sự kiện
+      link: /sukien
+    - name: Lịch sử xã Quỳnh Đôi
+      link: /xaquynhdoi
+    - name: Người Quỳnh Đôi thành đạt
+      link: 
+        
+- name: Thông tin khác
+  sub:
+    - name: Sổ Danh bạ
+      link: /danhba
+    - name: Tài liệu hướng dẫn
+      link: /tailieu
+    - name: Địa danh nổi tiếng ở xã
+      link: /diadanh
+    - name: Ảnh đẹp Quỳnh Đôi
+      link: /anh
+
+- name: Liên hệ chúng tôi
+  sub:
+    - name: Đóng góp bài viết
+      link: 
+    - name: Gửi thư cho ban quản trị
+      link: 
+    - name: Trang facebook
+      link: 

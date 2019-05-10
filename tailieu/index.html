@@ -1,0 +1,61 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tài liệu được phát hành bởi xã Quỳnh Đôi </title>
+  	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css'>
+<link rel='stylesheet' href='https://cdn.datatables.net/1.10.12/css/jquery.dataTables.css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  	<div class="container">
+		<button><a href = "/" style = "text-decoration: none">Về trang chủ</a></button>	 <br><br>
+	<table id="table" class="display">
+		 	<caption>Tài liệu hướng dẫn, tham khảo của xã Quỳnh Đôi phát hành</caption>
+		      <thead>
+		        <tr>
+		          <th scope="col">Tên tài liệu</th>
+		          <th scope="col">Loại tài liệu</th>
+		        </tr>
+		      </thead>
+
+		      <tbody>
+							{% for i in site.static_files %}
+							{% if i.path contains 'assets/documents/' %}
+							{% assign my_array = i.name | split: "." %}
+
+		        <tr>
+		          <th scope="row"><a href = "{{i.path}}">{{my_array[0]}}</a></th>
+		          <td>{{my_array[-1]}} - <a href ="{{i.path}}" download> Tải về</a></td>
+		        </tr>
+						
+						{% endif %}
+                {% endfor %}
+						
+		      </tbody>
+	      
+		</table>
+	</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

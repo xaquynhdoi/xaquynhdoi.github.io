@@ -1,0 +1,46 @@
+body{
+	font-family: 'Varela Round', sans-serif;
+	background-color: #454851;
+}
+.container{
+	background-color: #fff; 
+	width: 80%;
+	height: auto;
+	margin-top: 10%;
+	padding: 30px;
+	border-radius: 5px;
+margin-left: auto;
+margin-right: auto;
+}
+.dataTables_length select{
+	width: 50px;
+	background-color: #eaeaea;
+	border:none;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+
+table caption{
+	font-size: 2em;
+	margin: 20px 0px 20px 0px;
+}
+input[type="search"]{
+	background-color: #eaeaea;
+	border-radius: 3px; 
+	border: none;
+	padding: 3px;
+	height: 28px;
+}
+#table thead{
+	background-color: #6441a4;
+	border: none;
+	border-radius: 5px 5px 0px 0px;
+	color:white;
+}
+#table tbody{
+	margin-top: 10px;
+}
+tr[role="row"]{
+	height: 40px;
+}

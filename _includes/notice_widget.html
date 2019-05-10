@@ -1,0 +1,26 @@
+
+                            <div class="widget notices-widget">
+                                <div class="widget-inner">
+                                    <h3 class="widget-title m-has-ico"><i class="widget-ico tp tp-bullhorn"></i>Thông báo mới</h3>
+                                    <div class="widget-content">
+                                        <ul class="notice-list">
+                                            {% assign notices = (site.categories.notice | sort: 'date')  | reverse  %}
+                                            {% for post in notices limit: 4 %}
+
+
+                                            <!-- NOTICE : begin -->
+                                            <li class="notice">
+                                                <div class="notice-inner">
+                                                    <h4 class="notice-title"><a href="{{post.url}}">{{post.title}}</a></h4>
+                                                    <span class="notice-date">{{post.date | date: '%d/%m/%Y'}}</span>
+                                                </div>
+                                            </li>
+                                            <!-- NOTICE : end -->
+                                            {% endfor %}
+
+                                           
+                                        </ul>
+                                        <p class="show-all-btn"><a href="thongbao.html">Xem tất cả thông báo</a></p>
+                                    </div>
+                                </div>
+                            </div>

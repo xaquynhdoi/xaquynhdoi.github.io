@@ -1,0 +1,133 @@
+name: canboxa
+paginate: 6
+
+
+person: 
+- name: Phan Đình Hiền
+  role: Bí Thư Đảng Uỷ, Chủ Tịch Hội Đồng Nhân Dân Xã
+  img: /assets/images/male.png
+  phone: 0919338767
+  mail: phanhien60@gmail.com
+
+- name: Hồ Quang Tuấn 
+  role: Phó Bí Thư Đảng Uỷ, Chủ Tịch UBND Xã
+  img: /assets/images/male.png
+  phone: 0987404938
+  mail: quangtuanqd@gmail.com
+- name: Hồ bảo Thông
+  role: Phó bí thư đảng uỷ xã
+  img: /assets/images/male.png
+  phone: 0974397123
+  mail: baothong77@gmail.com
+- name: Hồ Sỹ Hưng
+  role: Uỷ Viên Ban Thường Vụ, Phó Chủ Tịch UBND Xã
+  img: /assets/images/male.png
+  phone: 0978480670
+  mail: hosyhung1964@gmail.com
+- name: Phan Thị Lương 
+  role: Uỷ Viên Ban Thường Vụ, Chủ Tịch Uỷ Ban Mặt Trận Tổ Quốc, Kiêm Chủ Tịch Hội Nông Dân Xã
+  img: /assets/images/female.png
+  phone: 0974667405
+  mail: phanluong70@gmail.com
+- name: Nguyễn Bá Dương
+  role: Đảng Uỷ Viên, Phó Chủ Tịch Hội Đồng Nhân Dân Xã
+  img: /assets/images/male.png
+  phone: 0916313974
+  mail: nguyenbaduong73@gmail.com
+
+- name: Hồ Đức Vĩ
+  role: Đảng Uỷ Viên, Bí Thư Đoàn Thanh Niên Xã
+  img: /assets/images/male.png
+  phone: 0973664838
+  mail: hoducvi@gmail.com
+
+- name: Hoàng Hương Thảo
+  role: Đảng Uỷ Viên, Chủ Tịch Hội Liên Hiệp Phụ Nữ Xã
+  img: /assets/images/female.png
+  phone: 0976628437
+  mail: hoangthaotv2711@gmail.com 
+
+- name: Phan Hữu Minh
+  role: Chủ tịch Hội Cựu chiến binh xã
+  img: /assets/images/male.png
+  phone: 0368117642
+
+- name: Hồ Quang Hải 
+  role: Đảng uỷ viên, uỷ viên uỷ ban, chỉ huy trưởng BCHQS xã
+  img: /assets/images/male.png
+  phone: 0977829867
+  mail: hoquanghai09@gmail.com
+
+- name: Nguyễn Văn Việt
+  role: Đảng uỷ viên, uỷ viên uỷ ban, trưởng công an xã
+  img: /assets/images/female.png
+  phone: 0974276148
+  mail: nguyenvanvietcaqd@gmail.com 
+
+- name: Hồ Đắc thắng
+  role: đảng uỷ viên, công chức văn hoá thông tin xã
+  img: /assets/images/male.png
+  phone: 0976607613
+  mail: dacthang70@gmail.com
+
+
+- name: Hồ Quang Thanh
+  role: công chức tư pháp hộ tịch
+  img: /assets/images/male.png
+  phone: 0989756685
+  mail: hothanhquynhdoi@gmail.com
+
+- name: Hồ Thị Thanh Mơ
+  role: công chức văn hoá chính sách
+  img: /assets/images/female.png
+  phone: 0961537368
+  mail: thanhmo2212@gmail.com
+
+- name: Lê Thị Hồng Thiêm
+  role: Công chức địa chính xây dựng
+  img: /assets/images/female.png
+  phone: 0966259368
+  mail: hongthiem82@gmail.com
+
+- name: Lê Thị Thuỷ
+  role: Công chức địa nông nghiệp
+  img: /assets/images/female.png
+  phone: 0338687300
+  mail: lethithuydcqd@gmail.com
+
+- name: Nguyễn Thị Thơm
+  role:  công chức kế toán
+  img: /assets/images/female.png
+  phone: 0389220884
+  mail: nguyenthom0581@gmail.com
+
+- name:  Nguyễn Thị Hoa 
+  role: công chức kế toán thuế
+  img: /assets/images/female.png
+  phone: 0343308996
+  mail: nguyenhoa311@gmail.com
+
+- name: Hồ Ngọc Sỹ 
+  role: công chức văn phòng - thống kê
+  img: /assets/images/male.png
+  phone: 0989459857
+  mail: ngocsy59@gmail.com
+
+- name: Phan Thị Hiền
+  role:  công chức văn phòng đảng uỷ, chính quyền
+  img: /assets/images/female.png
+  phone: 0967138238
+  mail: phanhienuybanquynhdoi@gmail.com
+
+- name: Hồ Thị Mỹ
+  role: chuyên trách dân số xã
+  img: /assets/images/female.png
+  phone: 0372873616
+  mail: myquynhdoi@gmail.com
+
+- name: Phan Đình Hải 
+  role: đảng uỷ viên, giám đốc hợp tác xã dịch vụ nông nhiệp
+  img: /assets/images/male.png
+  phone:
+  mail:
+

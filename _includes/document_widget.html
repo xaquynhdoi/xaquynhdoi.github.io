@@ -1,0 +1,39 @@
+<div class="widget documents-widget">
+    <div class="widget-inner">
+        <h3 class="widget-title m-has-ico"><i class="widget-ico tp tp-papers"></i>Tài liệu</h3>
+        <div class="widget-content">
+            <ul class="document-list m-has-icons">
+                {% for i in site.static_files limit: 4 %}
+                    {% if i.path contains 'assets/documents/' %}
+                    {% assign my_array = i.name | split: "." %}
+                    {% case my_array[-1] %}
+                                                {% when "pdf" %}
+                                                {% assign class = "fa fa-file-pdf-o" %}
+                                                {% when "word" %}
+                                                {% assign class = "fa fa-file-word-o" %}
+                                                {% when "excel" %}
+                                                {% assign class = "fa fa-file-excel-o" %}
+                                                {% endcase %}
+
+
+                <!-- DOCUMENT : begin -->
+                <li class="document">
+                    <div class="document-inner">
+                        <div class="document-icon" title="Document File"><i class="{{class}}"></i></div>
+                        <h4 class="document-title">
+                    <a href="{{i.path}}" target="_blank">{{my_array[0]}}</a>
+                    <a href="{{i.path}}" download> - Tải về  </a>
+                        </h4>
+                    </div>
+                </li>
+                <!-- DOCUMENT : end -->
+                {% endif %}
+                {% endfor %}
+
+
+
+            </ul>
+            <p class="show-all-btn"><a href="/tailieu" target="blank">Xem tất cả tài liệu</a></p>
+        </div>
+    </div>
+</div>

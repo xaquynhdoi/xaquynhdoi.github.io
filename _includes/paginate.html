@@ -1,0 +1,28 @@
+<div class="c-pagination">
+        <ul>
+            {% assign var1 = site.data.canboxa.paginate | times: page.page %}
+            {% assign var2 = site.data.canboxa.person | size %}
+            {% assign var3 = site.data.canboxa.paginate | times: 1.0 %}
+            {% assign var4 = var2 | divided_by: var3 | round %}
+        
+            Hiển thị: 
+            {% if var1 > var2 %}
+            {{var2}}/{{var2}}
+            {% else %}  
+            {{var1}}/{{var2}}
+            {% endif %}
+
+            {% for i in (1..var4)%}
+            {% assign var5 = site.data.canboxa.name | append: "-page" | append: i | prepend: '/' }} }} %}
+    
+            <li class="{% if page.url == var5 %}m-active {% endif%}"><a href="{{var5}}">{{i}}</a></li>
+
+
+            
+            {% endfor %}
+
+            
+            
+            
+        </ul>
+    </div>

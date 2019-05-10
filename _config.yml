@@ -1,0 +1,9 @@
+title: Trang thông tin về xã Quỳnh Đôi, Quỳnh Lưu, Nghệ An
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections:
+  - documents
