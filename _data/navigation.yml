@@ -7,11 +7,11 @@
     - name: Đảng ủy
       link: /danguy
     - name: Hội đồng nhân dân
-      link: 
+      link: /hoidongnhandan
     - name: Ủy ban nhân dân
-      link: 
+      link: /uybannhandan
     - name: Các tổ chức chính trị xã hội
-      link: 
+      link: /tochuckhac
 - name: Cộng đồng
   sub:
     - name: Hội Đồng Hương
