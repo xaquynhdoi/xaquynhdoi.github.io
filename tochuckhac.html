@@ -3,6 +3,7 @@ title: Tổ chức chính trị xã hội
 layout: home
 permalink: /tochuckhac
 headertitle: Tổ chức chính trị xã hội
+time: <strong>Mùa đông</strong><li>Buổi sáng 7h30 - 12h</li><li>Buổi chiểu 13h30 - 17h</li><br/> <strong>Mùa hè</strong><li>Buổi sáng 7h - 11h30</li><li>Buổi chiều 13h30-17h</li>
 ---
 
     <div class="c-gmap">
@@ -13,23 +14,43 @@ headertitle: Tổ chức chính trị xã hội
         <div class="row">
             <div class="col-md-12">
 
+                    <div class="c-feature">
+                            <div class="c-content-box">
+                                <div class="feature-inner">
+                                    <i class="feature-icon tp tp-flag"></i>
+                                    <h3 class="feature-title">Giờ làm việc</h3>
+                                    <div class="feature-content">
+                                        <p>
+                                            
+                    
+                    {{page.time}}
+                                       </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                {% for i in site.data.tochuckhac %}
+
                 <!-- FEATURE : begin -->
                 <div class="c-feature">
                     <div class="c-content-box">
                         <div class="feature-inner">
                             <i class="feature-icon tp tp-flag"></i>
-                            <h3 class="feature-title">{{page.title}}</h3>
+                            <h3 class="feature-title">{{i.name}}</h3>
                             <div class="feature-content">
                                 <p>
-                                Điện thoại: <a href="tel: {{page.phone}}">{{page.phone}}</a><br>
-                                Email: <a href="mailto: {{page.mail}}">{{page.mail}}</a><br>
-                                Giờ làm việc<br>
-                                 {{site.uybannhandan.time}}</p>
+                                Điện thoại: <a href="tel: {{i.phone}}">{{i.phone}}</a><br>
+                                Email: <a href="mailto: {{i.mail}}">{{i.mail}}</a><br>
+                               </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- FEATURE : end -->
+                {% endfor %}
+                
 
                 
 

@@ -2,6 +2,7 @@
 title: Ảnh đẹp
 headertitle: Bộ sưu tập ảnh về xã Quỳnh Đôi
 layout: home
+permalink: /anh
 ---
 					<!-- GALLERY LIST PAGE : begin -->
                     <div class="gallery-list-page gallery-page">
@@ -14,10 +15,10 @@ layout: home
                                     {% for i in site.data.gallery %}
                                     <li class="gallery-image">
                                         <div class="gallery-image-inner">
-                                            <a href="gallery-detail.html">
+                                            <a href="{{i.link}}">
                                                 <img src="{{i.img}}" alt="">
                                             </a>
-                                            <h2 class="gallery-title"><a href="gallery-detail.html">{{i.name}}</a></h2>
+                                            <h2 class="gallery-title"><a href="{{i.link}}">{{i.name}}</a></h2>
                                         </div>
                                     </li>
                                     {% endfor %}
@@ -28,12 +29,4 @@ layout: home
                         </div>
                         <!-- GALLERY LIST PAGE : begin -->
 
-                        <!-- PAGINATION : begin -->
-                        <div class="c-pagination">
-                            <ul>
-                                <li class="m-active"><a href="post-list.html">1</a></li>
-                                <li><a href="post-list.html">2</a></li>
-                                <li><a href="post-list.html">3</a></li>
-                            </ul>
-                        </div>
-                        <!-- PAGINATION : end -->
+                 

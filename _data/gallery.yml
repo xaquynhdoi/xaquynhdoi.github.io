@@ -1,6 +1,19 @@
-- name: Bộ sưu tập 1
-  img: /assets/images/gallery-01.jpg
-  link: 
-- name: Bộ sưu tập 2
-  img: /assets/images/gallery-02.jpg
-  link: 
+- name: Quỳnh Đôi ngày nay
+  img: /assets/images/featured-gallery-01.jpg
+  link: /gallery1
+
+- name: Phong cảnh Quỳnh Đôi
+  img: /assets/images/gallery/2/1520006355_9-nha-bia-tuong-niem-ho-xuan-huong-apvtoan.jpg
+  link: /gallery2
+
+- name: Lễ đón nhận di tích quốc gia đền Thần
+  img: /assets/images/gallery/3/IMG_0056.JPG
+  link: /gallery3
+
+- name: Hội làng Quỳnh Đôi
+  img: /assets/images/gallery/4/54430491_2050053035077793_6751705786361053184_n.jpg
+  link: /gallery4
+
+- name: Bằng di tích Quỳnh Đôi
+  img: /assets/images/gallery/5/IMG_3862.JPG
+  link: /gallery5

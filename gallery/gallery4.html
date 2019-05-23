@@ -1,0 +1,34 @@
+---
+title: Ảnh đẹp
+headertitle: Hội làng Quỳnh Đôi
+layout: home
+permalink: /gallery4
+---
+					
+<div class="gallery-detail-page gallery-page">
+
+        <!-- GALLERY : begin -->
+        <div class="c-gallery">
+            <ul class="gallery-images m-layout-masonry m-3-columns">
+
+                    {% for i in site.static_files %}
+
+                            {% if i.path contains 'assets/images/gallery/4' %}
+
+                <!-- GALLERY IMAGE : begin -->
+                <li class="gallery-image">
+                    <a href="{{i.path}}" class="lightbox" title="{{page.headertitle}}">
+                        <img src="{{i.path}}" alt="">
+                    </a>
+                </li>
+                <!-- GALLERY IMAGE : end -->
+                {% endif %}
+                {% endfor %}
+
+                
+            </ul>
+        </div>
+        <!-- GALLERY : end -->
+
+
+    </div>

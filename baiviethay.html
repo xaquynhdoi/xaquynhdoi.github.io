@@ -1,0 +1,62 @@
+---
+title: Bài viết hay
+headertitle: Bài viết hay về xã Quỳnh Đôi
+layout: home
+permalink: /baiviethay
+---
+					<!-- NOTICE LIST PAGE : begin -->
+                    <div class="notice-list-page notice-page">
+
+                            <!-- NOTICE : begin -->
+                            {% for post in site.categories.featured %}
+                            <article class="notice">
+                                <div class="notice-inner c-content-box m-no-padding">
+
+                                    <!-- NOTICE CORE : begin -->
+                                    <div class="notice-core">
+
+                                        <!-- NOTICE TITLE : begin -->
+                                        <h2 class="notice-title"><a href="{{post.url}}">{{post.title}}</a></h2>
+                                        <!-- NOTICE TITLE : end -->
+
+                                        <!-- NOTICE CONTENT : begin -->
+                                        <div class="notice-content">
+                                                <p>{{post.content | truncate: 200	}}<a href="{{post.url}}">[Xem đầy đủ]</a></p>
+                                        </div>
+                                        <!-- NOTICE CONTENT : end -->
+
+                                    </div>
+                                    <!-- NOTICE CORE : end -->
+
+                                    <!-- NOTICE FOOTER : begin -->
+                                    <div class="notice-footer">
+                                        <div class="notice-footer-inner">
+
+                                            <!-- NOTICE DATE : begin -->
+                                            <div class="notice-date">
+                                                <i class="ico tp tp-clock2"></i>{{post.date | date: '%d/%m/%Y'}}</a>
+                                            </div>
+                                            <!-- NOTICE DATE : end -->
+
+                                        </div>
+                                    </div>
+                                    <!-- NOTICE FOOTER : end -->
+
+                                </div>
+                            </article>
+                            {% endfor %}
+                            <!-- NOTICE : end -->
+
+
+                        </div>
+                        <!-- NOTICE LIST PAGE : begin -->
+
+                        <!-- PAGINATION : begin -->
+                        <div class="c-pagination">
+                            <ul>
+                                <li class="m-active"><a href="post-list.html">1</a></li>
+                                <li><a href="post-list.html">2</a></li>
+                                <li><a href="post-list.html">3</a></li>
+                            </ul>
+                        </div>
+                        <!-- PAGINATION : end -->
