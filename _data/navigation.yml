@@ -1,5 +1,7 @@
 - name: Hệ thống chính trị
   sub:
+    - name: Thông báo của xã
+      link: /thongbao
     - name: Danh sách cán bộ xã
       link: /canboxa-page1
     - name: Đảng ủy
@@ -12,16 +14,18 @@
       link: 
 - name: Cộng đồng
   sub:
-    - name: Thông báo của xã
-      link: /thongbao
+    - name: Hội Đồng Hương
+      link: /hoidonghuong
     - name: Tin tức mới
       link: /tintuc
-    - name: Sự kiện
-      link: /sukien
+    - name: Đời Sống
+      link: /doisong
+    - name: Nhân vật
+      link: /nhanvat
+    - name: Bài Viết Hay
+      link: /baiviethay
     - name: Lịch sử xã Quỳnh Đôi
       link: /xaquynhdoi
-    - name: Người Quỳnh Đôi thành đạt
-      link: 
         
 - name: Thông tin khác
   sub:

@@ -2,6 +2,9 @@
 title: Đảng ủy
 layout: home
 headertitle: Đảng ủy xã Quỳnh Đôi
+phone: 0974397123
+mail:  danguyqd@gmail.com
+time: Mùa đông, buổi sáng 7h30 - 12h, buổi chiểu 13h30 - 17h. Mùa hè, buổi sáng 7h - 11h30, buổi chiều 13h30-17h
 ---
 
     <div class="c-gmap">
@@ -17,13 +20,12 @@ headertitle: Đảng ủy xã Quỳnh Đôi
                     <div class="c-content-box">
                         <div class="feature-inner">
                             <i class="feature-icon tp tp-flag"></i>
-                            <h3 class="feature-title">Văn phòng đảng ủy</h3>
+                            <h3 class="feature-title">{{page.title}}</h3>
                             <div class="feature-content">
-                                <p>132 Main Street<br>
-                                TownPress, VT 13245<br>
-                                Phone: (123) 456-7890<br>
-                                Email: <a href="#">aaa@ádfsdfsdfsdf.net</a><br>
-                                Hours: Monday &ndash; Friday 8:00 a.m. &ndash; 5:00 p.m</p>
+                                <p>
+                                Điện thoại: <a href="tel: {{page.phone}}">{{page.phone}}</a><br>
+                                Email: <a href="mailto: {{page.mail}}">{{page.mail}}</a><br>
+                                Giờ làm việc: {{page.time}}</p>
                             </div>
                         </div>
                     </div>
