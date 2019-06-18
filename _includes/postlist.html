@@ -1,4 +1,5 @@
 
+                            {% if site.categories.news %}
                             <div class="c-post-list m-has-icon">
                                 <div class="c-content-box">
                                     <div class="post-list-inner">
@@ -19,9 +20,7 @@
                                                         <a href="{{news[0].url}}">{{news[0].title}}</a>
                                                     </h3>
                                                     <div class="post-date"><i class="ico tp tp-clock2"></i>{{news[0].date | date: '%d/%m/%Y'}}</div>
-                                                    <div class="post-excerpt">
-                                                        <p>{{news[0].content | truncate: 200	}}<a href="{{news[0].url}}">[Xem đầy đủ]</a></p>
-                                                    </div>
+                                                
                                                 </div>
                                             </article>
 
@@ -46,3 +45,5 @@
                                     </div>
                                 </div>
                             </div>
+
+                            {% endif %}

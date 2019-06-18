@@ -15,17 +15,16 @@
 - name: Cộng đồng
   sub:
     - name: Hội Đồng Hương
-      link: /hoidonghuong
+      link: /
     - name: Tin tức mới
       link: /tintuc
     - name: Đời Sống
-      link: /doisong
+      link: /
     - name: Nhân vật
       link: /nhanvat
     - name: Bài Viết Hay
       link: /baiviethay
-    - name: Lịch sử xã Quỳnh Đôi
-      link: /xaquynhdoi
+ 
         
 - name: Thông tin khác
   sub:
@@ -45,4 +44,4 @@
     - name: Gửi thư cho ban quản trị
       link: 
     - name: Trang facebook
-      link: 
+      link: https://www.facebook.com/langquynhdoi

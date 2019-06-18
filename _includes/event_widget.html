@@ -1,5 +1,6 @@
 
-                            <div class="widget events-widget">
+                           {% if site.categories.event %}
+                           <div class="widget events-widget">
                                 <div class="widget-inner">
                                     <h3 class="widget-title m-has-ico"><i class="widget-ico tp tp-calendar-full"></i>Sự kiện sắp tới</h3>
                                     <div class="widget-content">
@@ -23,3 +24,5 @@
                                     </div>
                                 </div>
                             </div>
+
+                            {% endif %}
