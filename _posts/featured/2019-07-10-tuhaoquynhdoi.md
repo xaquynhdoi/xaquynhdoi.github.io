@@ -164,5 +164,8 @@ Nhìn lại quá trình hình thành, xây dựng và bảo vệ Làng , chúng 
 cộng đồng; đó là đức tình cần cù hiếu học, trọng lễ nghĩa; đó là tinh thần tự lực
 tự cường; là lòng tự tôn về quê hương và trách nhiệm cá nhân với cộng đồng
 làng xã.
+
 Tháng 01 năm 2018
+
+
 **Bí thư Đảng uỷ Phan Đình Hiền**
