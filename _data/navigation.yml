@@ -1,7 +1,5 @@
 - name: Hệ thống chính trị
   sub:
-    - name: Thông báo của xã
-      link: /thongbao
     - name: Danh sách cán bộ xã
       link: /canboxa-page1
     - name: Đảng ủy
@@ -14,8 +12,9 @@
       link: /tochuckhac
 - name: Cộng đồng
   sub:
-    - name: Hội Đồng Hương
-      link: /
+    
+    - name: Thông báo của xã
+      link: /thongbao
     - name: Tin tức mới
       link: /tintuc
     - name: Nhân vật
